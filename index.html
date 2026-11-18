@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Dunkers College, a basketball academy combining sport, education and personal development.">
+  <title>Dunkers College | Basketball Academy</title>
+  <style>
+    :root {
+      --bg: #090a0d;
+      --panel: #14161b;
+      --gold: #e9bd73;
+      --cream: #f5f1e9;
+      --muted: #a9a9ad;
+      --line: rgba(255,255,255,.12);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; background: var(--bg); color: var(--cream);
+      font-family: Arial, Helvetica, sans-serif; line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+    .topbar {
+      position: sticky; top: 0; z-index: 10; display: flex; align-items: center;
+      justify-content: space-between; gap: 24px; padding: 18px 7%;
+      background: rgba(9,10,13,.92); backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+    .brand { font-weight: 900; letter-spacing: 1.5px; line-height: 1.1; }
+    .brand span { display: block; color: var(--gold); font-size: 10px; letter-spacing: 3px; margin-top: 5px; }
+    nav { display: flex; gap: 25px; flex-wrap: wrap; }
+    nav a { color: #ddd; font-size: 13px; }
+    nav a:hover { color: var(--gold); }
+    .hero {
+      min-height: 590px; display: flex; align-items: center; padding: 90px 7%;
+      background: linear-gradient(90deg, rgba(5,6,8,.94) 0%, rgba(5,6,8,.73) 48%, rgba(5,6,8,.12) 100%),
+                  url("images/campus.webp") center 42%/cover no-repeat;
+    }
+    .hero-content { max-width: 650px; }
+    .eyebrow { color: var(--gold); text-transform: uppercase; letter-spacing: 4px; font-size: 12px; font-weight: 700; }
+    h1 { font-size: clamp(46px, 7vw, 82px); line-height: .98; margin: 18px 0; letter-spacing: -3px; }
+    h1 span { color: var(--gold); }
+    .hero p { max-width: 540px; color: #ddd; font-size: 17px; }
+    .button {
+      display: inline-block; margin-top: 20px; padding: 13px 22px; background: var(--gold);
+      color: #111; font-weight: 800; font-size: 12px; letter-spacing: 1px; text-transform: uppercase;
+    }
+    section { padding: 82px 7%; }
+    .section-head { max-width: 700px; margin-bottom: 35px; }
+    h2 { font-size: clamp(30px, 4vw, 46px); line-height: 1.1; margin: 10px 0 14px; }
+    .section-head p, .muted { color: var(--muted); }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .card { padding: 27px; background: var(--panel); border: 1px solid var(--line); min-height: 210px; }
+    .number { color: var(--gold); font-size: 12px; letter-spacing: 2px; font-weight: 800; }
+    .card h3 { margin: 18px 0 8px; font-size: 21px; }
+    .card p { color: var(--muted); margin: 0; font-size: 14px; }
+    .feature { display: grid; grid-template-columns: 1fr 1fr; gap: 55px; align-items: center; background: #101216; }
+    .feature img { width: 100%; border: 1px solid var(--line); display: block; }
+    .feature ul { padding-left: 20px; color: var(--muted); }
+    .feature li { margin: 9px 0; }
+    .quote { text-align: center; background: var(--gold); color: #111; padding: 62px 7%; }
+    .quote h2 { max-width: 850px; margin: 0 auto 12px; }
+    .quote p { margin: 0; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; font-size: 11px; }
+    footer { padding: 30px 7%; display: flex; justify-content: space-between; gap: 15px; flex-wrap: wrap; color: var(--muted); font-size: 12px; border-top: 1px solid var(--line); }
+    @media (max-width: 760px) {
+      .topbar { align-items: flex-start; flex-direction: column; }
+      nav { gap: 14px; }
+      .hero { min-height: 560px; background-position: 58% center; }
+      .cards, .feature { grid-template-columns: 1fr; }
+      section { padding: 62px 7%; }
+      .feature { gap: 28px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home">DUNKERS COLLEGE<span>BASKETBALL ACADEMY</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#programs">Our programs</a>
+      <a href="#facilities">Facilities</a>
+      <a href="#values">Our values</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="eyebrow">More than a basketball academy</div>
+        <h1>PLAY.<br><span>TRAIN.</span><br>PROGRESS.</h1>
+        <p>Welcome to Dunkers College, where basketball, education and personal development come together. Our goal is to help every student grow on and off the court.</p>
+        <a class="button" href="#about">Discover our college</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section-head">
+        <div class="eyebrow">Welcome to Dunkers</div>
+        <h2>A place to learn, compete and grow.</h2>
+        <p>Dunkers College is presented as a basketball academy that gives students the opportunity to develop their sporting skills while continuing their studies. We believe that success comes from effort, teamwork and determination.</p>
+      </div>
+    </section>
+
+    <section id="programs">
+      <div class="section-head">
+        <div class="eyebrow">What we offer</div>
+        <h2>Our programmes</h2>
+        <p>Three important parts of the Dunkers College experience.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><div class="number">01 / SPORT</div><h3>Basketball training</h3><p>Develop your technique, confidence and understanding of the game through regular practice.</p></article>
+        <article class="card"><div class="number">02 / EDUCATION</div><h3>Academic studies</h3><p>Keep learning and working towards your academic goals alongside your sporting ambitions.</p></article>
+        <article class="card"><div class="number">03 / DEVELOPMENT</div><h3>Personal progress</h3><p>Build discipline, teamwork, responsibility and a strong mindset every day.</p></article>
+      </div>
+    </section>
+
+    <section class="feature" id="facilities">
+      <div>
+        <div class="eyebrow">Our campus</div>
+        <h2>Train in an inspiring environment.</h2>
+        <p class="muted">The Dunkers College campus brings together spaces designed for sport, training and student life.</p>
+        <ul>
+          <li>A basketball court for practice and competition</li>
+          <li>A fitness area to support physical preparation</li>
+          <li>Shared spaces to study, meet and relax</li>
+        </ul>
+      </div>
+      <img src="images/campus.webp" alt="Dunkers College campus, basketball court, training area and student lounge">
+    </section>
+
+    <section id="values">
+      <div class="section-head">
+        <div class="eyebrow">Our philosophy</div>
+        <h2>Strong values. Shared ambition.</h2>
+      </div>
+      <div class="cards">
+        <article class="card"><div class="number">01</div><h3>Teamwork</h3><p>We support each other and work together towards common goals.</p></article>
+        <article class="card"><div class="number">02</div><h3>Respect</h3><p>We respect teammates, opponents, coaches, teachers and ourselves.</p></article>
+        <article class="card"><div class="number">03</div><h3>Determination</h3><p>We stay curious, practise with purpose and keep improving.</p></article>
+      </div>
+    </section>
+
+    <section class="quote">
+      <h2>“Dream big. Work hard. Play together.”</h2>
+      <p>The Dunkers College spirit</p>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Dunkers College — Basketball Academy</span>
+    <span>School presentation project</span>
+  </footer>
+</body>
+</html>
